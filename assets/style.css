@@ -1,0 +1,149 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: 'Roboto Mono', monospace;
+    list-style: none;
+    text-decoration: none;
+   
+}
+ /* start header */
+header{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1px 10%;
+    background-color: white;
+}
+.logo{
+    max-width: 80px;
+    height: auto;
+    margin-top: 10px;
+}
+a{
+    text-decoration: none;
+}
+.navmenu {
+    display: flex;
+    margin-top: 20px;
+}
+.navmenu a{
+    color: black;
+    font-size: 16;
+    text-transform: capitalize;
+    padding: 10px 20px;
+    font-weight: 480;
+    transition: all .42s ease;
+    
+    
+}
+.navmenu a:hover{
+    color: red;
+}
+.nav-icon{
+    display: flex;
+    align-items: center;
+ 
+}
+.nav-icon i{
+    margin: 20px;
+    color: black;
+    font-size: 25px;
+    font-weight: 400px;
+    transition: all .42s ease;
+}
+.nav-icon i:hover{
+    transform: scale(1.1);
+    color: red;
+}
+#menu-icon{
+    color: black;
+    font-size: 35px;
+    z-index: 10001;
+    cursor: pointer;
+}
+ /* end header */
+
+ .main-content{
+    padding: 5% 10%;
+    margin-top: 120px;
+ }
+ .search_click{
+    display: flex;
+ }
+.trigger_search{
+  cursor: pointer;
+}
+
+ .search__input{
+    border-radius: 20px;
+    border: 0;
+    outline: 0;
+    transition: 0.25s ease-in-out all;
+    width: 0;
+    padding: 0;
+    margin-right: -25px;
+    height: 40px;
+ }
+
+ .input_open{
+    position: relative;
+    border: 1px solid black;
+    width: 100%;
+    padding: 10px 10px;
+    /* bottom:  50%; */
+    top: 200px;
+ }
+
+ .cart-quantity {
+    color: black;
+    padding: 2px 5px;
+    border-radius: 50%;
+    font-size: 12px;
+    position: relative;
+    right: 30px;
+    bottom: 26px;
+    top: -6px;
+}
+
+
+
+
+/* start responsive */
+
+@media(max-width:890px) {
+    header{
+        padding: 20px 3%;
+        transition: .4s;
+    }
+}
+
+@media(max-width:630px) {
+
+}
+
+@media(max-width:750px) {
+    .navmenu{
+        position: absolute;
+        font-size: 12px;
+        top: 100%;
+        width: 100%;
+        height: 10vh;
+        display: flex;
+        flex-direction:row;
+        align-items:center;
+        padding: 5px 5px;
+        transition: all .42s;
+        font-weight: 480;
+    }
+    .main-content{
+        margin-top: 200px;
+    }
+}
